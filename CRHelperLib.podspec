@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CRHelperLib"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "自用小助手"
 
   # This description is used to generate tags and improve search results.
@@ -91,6 +91,27 @@ Pod::Spec.new do |spec|
   spec.source_files  = "CRHelperLib/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
   # spec.public_header_files = "CRHelperLib/**/*.h"
+
+  #创建子文件夹
+  spec.subspec "File" do |ss|
+    ss.source_files = "CRHelperLib/File/*.{h,m}"
+  end
+
+  spec.subspec "Media" do |ss|
+    ss.source_files = "CRHelperLib/Media/*.{h,m}"
+  end
+
+  spec.subspec "Base" do |ss|
+    ss.source_files = "CRHelperLib/Base/*.{h,m}"
+  end
+
+  spec.subspec "UserCreator" do |ss|
+    ss.source_files = "CRHelperLib/UserCreator/*.{h,m}"
+  end
+  spec.subspec "View" do |ss|
+    ss.source_files = "CRHelperLib/View/*.{h,m}"
+  end
+
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
