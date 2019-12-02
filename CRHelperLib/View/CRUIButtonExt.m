@@ -7,7 +7,6 @@
 //
 
 #import "CRUIButtonExt.h"
-#import "CRUtils.h"
 
 @implementation UIButton(CRExt)
 
@@ -29,7 +28,7 @@
     return [self createButton:image
                   selectImage:selectImage
                         title:title
-                         font:UISystemFont(fontSize)
+                         font:[UIFont systemFontOfSize:fontSize]
                    titleColor:titleColor
                   selectColor:selectColor
                     backColor:backColor];
@@ -79,7 +78,7 @@
                    selectColor:(UIColor *)selectColor{
     
     return [self createTextButton:title
-                             font:UISystemFont(fontSize)
+                             font:[UIFont systemFontOfSize:fontSize]
                        titleColor:titleColor
                         backColor:backColor
                       selectColor:selectColor];

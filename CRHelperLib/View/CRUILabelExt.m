@@ -7,7 +7,6 @@
 //
 
 #import "CRUILabelExt.h"
-#import "CRUtils.h"
 
 @implementation UILabel(CRExt)
 
@@ -17,7 +16,7 @@
                    color:(UIColor *)fontColor
                textAlign:(NSTextAlignment)textAlign{
     return [self createLabel:text
-                        font:UISystemFont(fontSize)
+                        font:[UIFont systemFontOfSize:fontSize]
                        color:fontColor
                    textAlign:textAlign];
 }
