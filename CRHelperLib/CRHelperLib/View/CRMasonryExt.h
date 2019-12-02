@@ -14,7 +14,7 @@
 #ifndef CRMasonryExt_h
 #define CRMasonryExt_h
 
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 
 
 #define MAS_top(x,y)            make.top.equalTo(x).with.offset(y)
