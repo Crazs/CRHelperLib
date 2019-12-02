@@ -7,7 +7,7 @@
 //
 
 #import "CRUILabelExt.h"
-#import "CRHelperLib.h"
+#import "CRUtils.h"
 
 @implementation UILabel(CRExt)
 
