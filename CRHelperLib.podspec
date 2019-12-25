@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CRHelperLib"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "自用小助手"
   spec.description  = "Crazs"
   spec.homepage     = "https://github.com/Crazs/CRHelperLib"
