@@ -18,14 +18,30 @@
     self = [super init];
     if (self) {
         self.mID = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(mID))];
-        self.mHash = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(mHash))];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder{
     [aCoder encodeObject:self.mID forKey:NSStringFromSelector(@selector(mID))];
-    [aCoder encodeObject:self.mHash forKey:NSStringFromSelector(@selector(mHash))];
+}
+
+@end
+
+
+/**
+ @brief     YYModel的扩充
+ */
+@implementation CRBaseModel(YYModel)
+
+//返回一个 Dict，将 Model 属性名对映射到 JSON 的 Key。
++ (NSDictionary *)modelCustomPropertyMapper{
+    return @{@"mID" : @"id"};
+}
+
+// 如果实现了该方法，则处理过程中会忽略该列表内的所有属性
++ (NSArray *)modelPropertyBlacklist {
+    return @[@"mHash"];
 }
 
 

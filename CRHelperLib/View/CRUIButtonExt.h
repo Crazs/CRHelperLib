@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
+
 typedef NS_ENUM(NSInteger, CRButtonImageTextAlign) {
     CRButtonImageTextAlignNormal        = 0,    //左图右文
     CRButtonImageTextAlignTopBottom     = 1,    //上图下文
@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, CRButtonImageTextAlign) {
     CRButtonImageTextAlignLeft          = 3,    //左对齐
     CRButtonImageTextAlignRight         = 4,    //右对齐
 };
-*/
+
  
 @interface UIButton(CRExt)
 
@@ -95,11 +95,10 @@ typedef NS_ENUM(NSInteger, CRButtonImageTextAlign) {
                     selectImage:(UIImage *)selectImage;
 
 
+
+- (void)setImageTextAlign:(CRButtonImageTextAlign)imageTextAlign;
+
 /**
-- (void)setImageTextAlign:(CRButtonImageTextAlign)imageTextAlign
-                   offset:(CGFloat)offset;
-
-
 - (void)setBackColor:(UIColor *)color
             forState:(UIControlState)state;
 

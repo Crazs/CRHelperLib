@@ -162,13 +162,53 @@
     return btn;
 }
 
+- (void)setImageTextAlign:(CRButtonImageTextAlign)imageTextAlign{
+    switch (imageTextAlign) {
+        case CRButtonImageTextAlignTopBottom:
+        {
+            //使图片和文字水平居中显示
+            self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+            self.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+          
+            //图片距离右边框距离减少图片的宽度，其它不边
+            [self setImageEdgeInsets:UIEdgeInsetsMake(-self.titleLabel.bounds.size.height/2,
+                                                      self.titleLabel.bounds.size.width/2,
+                                                      self.titleLabel.bounds.size.height/2,
+                                                      -self.titleLabel.bounds.size.width/2)];
 
-/**
-- (void)setImageTextAlign:(CRButtonImageTextAlign)imageTextAlign
-                   offset:(CGFloat)offset{
-    
+            //文字距离上边框的距离增加imageView的高度，距离左边框减少imageView的宽度，距离下边框和右边框距离不变
+            [self setTitleEdgeInsets:UIEdgeInsetsMake(self.imageView.frame.size.height / 2 ,
+                                                      -self.imageView.frame.size.width,
+                                                      -self.imageView.frame.size.height / 2,
+                                                      0.0)];
+
+                    }
+            break;
+        case CRButtonImageTextAlignRightLeft:
+        {
+            [self setTitleEdgeInsets:UIEdgeInsetsMake(0, -self.imageView.bounds.size.width, 0, self.imageView.bounds.size.width)];
+            
+            [self setImageEdgeInsets:UIEdgeInsetsMake(0, self.titleLabel.bounds.size.width, 0, -self.titleLabel.bounds.size.width)];
+        }
+            break;
+        case CRButtonImageTextAlignLeft:
+        {
+            self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        }
+            break;
+        case CRButtonImageTextAlignRight:
+        {
+            self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
+        }
+            break;
+        default:
+            break;
+    }
 }
 
+
+
+/**
 
 - (void)setBackColor:(UIColor *)color
             forState:(UIControlState)state{

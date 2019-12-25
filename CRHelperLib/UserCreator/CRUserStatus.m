@@ -18,6 +18,7 @@ NSString * const CRUSER_ACCOUNTS                    = @"CRUser_accounts";
 @implementation CRUserStatus
 
 static CRUserStatus * _rUser = nil;
+
 +(BOOL)supportsSecureCoding{
     return YES;
 }
@@ -64,9 +65,13 @@ static CRUserStatus * _rUser = nil;
     
     NSData * userInfoData = [[NSUserDefaults standardUserDefaults] objectForKey:CRUSER_STATUS_INFO];
     NSSet * classSet = [[NSSet alloc] initWithObjects:[CRUserStatus class], [CRAccount class] , [CRMediaImage class], [CRAuthentication class], nil];
-
-    CRUserStatus * userStatus = [NSKeyedUnarchiver unarchivedObjectOfClasses:classSet fromData:userInfoData error:nil];
     
+    CRUserStatus * userStatus;
+    if (@available(iOS 11.0, *)) {
+        userStatus = [NSKeyedUnarchiver unarchivedObjectOfClasses:classSet fromData:userInfoData error:nil];
+    } else {
+        userStatus = [NSKeyedUnarchiver unarchiveObjectWithData:userInfoData];
+    }
     self.login = userStatus.isLogin;
     self.token = userStatus.token;
     self.localAccount = userStatus.localAccount;
@@ -74,9 +79,13 @@ static CRUserStatus * _rUser = nil;
 
 ///    存储当前用户状态
 - (void)storageUserStatus{
-    NSData * userInfoData = [NSKeyedArchiver archivedDataWithRootObject:self requiringSecureCoding:YES error:nil];
-  
-    [[NSUserDefaults standardUserDefaults] setObject:userInfoData forKey:(NSString *)CRUSER_STATUS_INFO] ;
+    if (@available(iOS 11.0, *)) {
+        NSData * userInfoData = [NSKeyedArchiver archivedDataWithRootObject:self requiringSecureCoding:YES error:nil];
+        [[NSUserDefaults standardUserDefaults] setObject:userInfoData forKey:(NSString *)CRUSER_STATUS_INFO] ;
+    } else {
+        NSData * userInfoData = [NSKeyedArchiver archivedDataWithRootObject:self];
+        [[NSUserDefaults standardUserDefaults] setObject:userInfoData forKey:(NSString *)CRUSER_STATUS_INFO] ;
+    }
 }
 
 ///    登录账户
@@ -92,12 +101,12 @@ static CRUserStatus * _rUser = nil;
 
 ///     登出账户
 - (void)logoutAccount{
-    CRUserStatus * userStatusCopy = [self copy];
     _login = NO;
     _token = nil;
+    [self storageUserStatus];
+    [self pushLogoutNotification:self];
     _localAccount = nil;
     [self storageUserStatus];
-    [self pushLogoutNotification:userStatusCopy];
 }
 
 ///     存储账户信息
@@ -110,29 +119,31 @@ static CRUserStatus * _rUser = nil;
 ///     清除账户信息
 - (void)cleanUserIdenfitier:(NSString *)identirier{
     NSMutableArray * tmpArr = [[self allAccounts] mutableCopy];
-#warning MMS 这里的便利太low了，以后改一下
-    __block id tmpAcc;
-    [tmpArr enumerateObjectsUsingBlock:^(CRAccount *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj.mID isEqualToString:identirier]) {
-            tmpAcc = obj;
-            *stop = YES;
-        }
-    }];
-    [tmpArr removeObject:tmpAcc];
+    NSPredicate * pre = [NSPredicate predicateWithFormat:@"mID == %@",identirier];
+    [tmpArr removeObject:[tmpArr filteredArrayUsingPredicate:pre].firstObject];
+    [self storageAccounts:tmpArr];
 }
 
 ///     获取所有账户信息列表，多账户模式
 - (NSArray *)allAccounts{
     
     NSData * accountsArrData = [[NSUserDefaults standardUserDefaults] objectForKey:CRUSER_ACCOUNTS];
-    NSArray * accounts = [NSKeyedUnarchiver unarchivedObjectOfClass:[NSArray class] fromData:accountsArrData error:nil];
-  
-    return accounts;
+    if (@available(iOS 11.0, *)) {
+        NSArray * accounts = [NSKeyedUnarchiver unarchivedObjectOfClass:[NSArray class] fromData:accountsArrData error:nil];
+        return accounts;
+    } else {
+        return [NSKeyedUnarchiver unarchiveObjectWithData:accountsArrData];
+    }
 }
 
 ///     存储多有账户信息
 - (void)storageAccounts:(NSArray *)accounts{
-    NSData * accountsData = [NSKeyedArchiver archivedDataWithRootObject:accounts requiringSecureCoding:NO error:nil];
+    NSData * accountsData;
+    if (@available(iOS 11.0, *)) {
+        accountsData = [NSKeyedArchiver archivedDataWithRootObject:accounts requiringSecureCoding:NO error:nil];
+    } else {
+        accountsData = [NSKeyedArchiver archivedDataWithRootObject:accounts];
+    }
     [[NSUserDefaults standardUserDefaults] setObject:accountsData forKey:(NSString *)CRUSER_ACCOUNTS] ;
 }
 

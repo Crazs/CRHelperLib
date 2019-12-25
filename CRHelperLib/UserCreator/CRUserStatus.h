@@ -11,9 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString *const CRUserLoginNotification;
-extern NSString *const CRUserLogoutNotification;
-extern NSString *const CRUserTokenExpiredNotification;
+extern NSString *const CRUserLoginNotification;             //用户登录成功的通知key
+extern NSString *const CRUserLogoutNotification;            //用户退出登录的通知key
+extern NSString *const CRUserTokenExpiredNotification;      //用户的token过期通知
 
 
 @interface CRUserStatus : NSObject<NSSecureCoding>
@@ -21,7 +21,8 @@ extern NSString *const CRUserTokenExpiredNotification;
 /*!
  @brief     是否登录
  */
-@property (nonatomic, assign, getter=isLogin) BOOL login;       
+@property (nonatomic, assign, getter=isLogin) BOOL login;
+
 /*!
  @brief     登录token信息
  */
@@ -31,7 +32,6 @@ extern NSString *const CRUserTokenExpiredNotification;
  @brief     当前账户
  */
 @property (nonatomic, strong) CRAccount  * localAccount;
-
 
 
 /*!
@@ -74,14 +74,10 @@ extern NSString *const CRUserTokenExpiredNotification;
  */
 - (NSArray *)allAccounts;
 
-
-
-
 /*!
  @brief     清除状态，测试专用
  */
 - (void)cleanStatus;
-
 
 @end
 

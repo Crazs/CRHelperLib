@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CRBaseModel : NSObject<NSSecureCoding>
 
 @property (nonatomic,copy) NSString *mID;
-@property (nonatomic,copy) NSString *mHash;
 
 @end
 

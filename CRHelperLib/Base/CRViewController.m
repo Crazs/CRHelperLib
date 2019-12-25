@@ -14,10 +14,39 @@
 
 @implementation CRViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.isShowNavBar = YES;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:!self.isShowNavBar animated:animated];
+}
+
+//默认不支持旋转
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
+    return UIInterfaceOrientationMaskPortrait ;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationPortrait;
+}
+
 
 /*
 #pragma mark - Navigation

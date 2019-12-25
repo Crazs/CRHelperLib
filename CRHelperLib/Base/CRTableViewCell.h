@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 /*!
  @brief     基础的tableView Cell
+ *修改选中样式为UITableViewCellSelectionStyleNone
  */
 @interface CRTableViewCell : UITableViewCell
 
