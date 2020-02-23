@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CRHelperLib"
-  spec.version      = "0.0.8"
+  spec.version      = "0.1.0"
   spec.summary      = "自用小助手"
   spec.description  = "Crazs"
   spec.homepage     = "https://github.com/Crazs/CRHelperLib"
@@ -15,32 +15,5 @@ Pod::Spec.new do |spec|
   spec.dependency "AFNetworking", "~> 3.2.1"
   spec.dependency "SDWebImage", "~> 4.4.6"
   spec.dependency "Masonry", "~> 1.1.0"
-
-
-  #创建子文件夹
-  spec.subspec 'Base' do |ss|
-    ss.source_files = "CRHelperLib/Base/*.{h,m}"
-  end
-
-  spec.subspec 'File' do |ss|
-    ss.source_files = "CRHelperLib/File/*.{h,m}"
-  end
-
-  spec.subspec 'Media' do |ss|
-    ss.source_files = "CRHelperLib/Media/*.{h,m}"
-    ss.dependency 'CRHelperLib/Base'
-  end
-
-  spec.subspec 'UserCreator' do |ss|
-    ss.source_files = "CRHelperLib/UserCreator/*.{h,m}"
-    ss.dependency 'CRHelperLib/Base'
-    ss.dependency 'CRHelperLib/Media'
-  end
-
-  spec.subspec 'View' do |ss|
-    ss.source_files = "CRHelperLib/View/*.{h,m}"
-    ss.dependency "Masonry", "~> 1.1.0"
-    ss.dependency 'CRHelperLib/Base'
-  end
 
 end

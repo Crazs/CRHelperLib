@@ -9,35 +9,34 @@
 #ifndef Utils_h
 #define Utils_h
 
-#ifndef kScreenWidth
-#define kScreenWidth    [UIScreen mainScreen].bounds.size.width
+///size
+#ifndef ScreenWidth
+#define ScreenWidth    [UIScreen mainScreen].bounds.size.width
 #endif
-#ifndef kScreenHeight
-#define kScreenHeight   [UIScreen mainScreen].bounds.size.height
+#ifndef ScreenHeight
+#define ScreenHeight   [UIScreen mainScreen].bounds.size.height
 #endif
 
-#define kStatusBarHeight    [[UIApplication sharedApplication] statusBarFrame].size.height
+#define StatusBarHeight    [[UIApplication sharedApplication] statusBarFrame].size.height
 
 #define iOS_Version     [[UIDevice currentDevice] systemVersion].floatValue
-#define kCurVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define CurVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define IPHONEX (__SCREEN_WIDTH__ == 375.f && __SCREEN_HEIGHT__ == 812.f)
 
-#define WS(weakSelf)  __weak __typeof (&*self)weakSelf = self
+#define WEAK_SELF        typeof(self) __weak weakself= self;
+#define STRONG_SELF      typeof(weakself) __strong strongSelf = weakself;
 
 
 //路径
-#define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
-#define kLibraryPath  [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0]
-#define kCachesPath   [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define DocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define LibraryPath  [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define CachesPath   [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
-
-#define UIBoldFont(a)   [UIFont boldSystemFontOfSize:a]
-#define UISystemFont(a) [UIFont systemFontOfSize:a]
-
+///适配
 #define CGFloatAutoFit(a) round(a*(MIN(kScreenWidth, kScreenHeight)/375.))
 #define CGFAF(a) round(a*(MIN(kScreenWidth, kScreenHeight)/320.))
 
-
-//图片
-#define UIIMAGE_NAME(a) [UIImage imageNamed:a]
+//结束编辑
+#define AllEndEditing ([[UIApplication sharedApplication].keyWindow endEditing:YES])
 
 #endif /* Utils_h */
