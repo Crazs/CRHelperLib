@@ -5,10 +5,6 @@ target 'CRHelperLib’ do
   pod 'AFNetworking', '~> 3.2.1'
   pod 'SDWebImage', '~> 4.4.6'
   pod 'Masonry', '~> 1.1.0'
-  # Pods for testing
-  target'CRHelperLibTests' do  # MyAppTests 目录下的引用
-    inherit! :search_paths
-  end
 end
 
 

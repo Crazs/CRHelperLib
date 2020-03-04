@@ -1,7 +1,3 @@
-# CRHelperLib
-小工具,自用
-
-
 
 #创建子文件夹
  spec.subspec 'xxx' do |ss|         //子文件夹
