@@ -11,9 +11,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.source       = { :git => "https://github.com/Crazs/CRHelperLib.git", :tag => "#{spec.version}" }
   spec.source_files  = "CRHelperLib/*.{h,m}"
-  spec.dependency "MJRefresh"
-  spec.dependency "AFNetworking", "~> 3.2.1"
-  spec.dependency "SDWebImage", "~> 4.4.6"
+  
   spec.dependency "Masonry", "~> 1.1.0"
 
 end
