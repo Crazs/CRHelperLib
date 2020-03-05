@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B8978BD3CCF454F420916E6 /* libPods-CRHelperLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16319B0E1BAF080DDE295082 /* libPods-CRHelperLib.a */; };
+		B8100E2E2410CA1C005328F0 /* CRUIImageExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E262410CA1C005328F0 /* CRUIImageExt.m */; };
+		B8100E2F2410CA1C005328F0 /* CRUIButtonExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E2A2410CA1C005328F0 /* CRUIButtonExt.m */; };
+		B8100E302410CA1C005328F0 /* CRUIColorExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E2B2410CA1C005328F0 /* CRUIColorExt.m */; };
+		B8100E312410CA1C005328F0 /* CRUIAlertControllerExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E2C2410CA1C005328F0 /* CRUIAlertControllerExt.m */; };
+		B8100E322410CA1C005328F0 /* CRUILabelExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E2D2410CA1C005328F0 /* CRUILabelExt.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8100E122410C9D6005328F0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16319B0E1BAF080DDE295082 /* libPods-CRHelperLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRHelperLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4851532BC1F836B2A6F8A830 /* Pods-CRHelperLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRHelperLib.release.xcconfig"; path = "Target Support Files/Pods-CRHelperLib/Pods-CRHelperLib.release.xcconfig"; sourceTree = "<group>"; };
+		B8100E142410C9D6005328F0 /* libCRHelperLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCRHelperLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8100E202410CA1C005328F0 /* CRUIImageExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIImageExt.h; sourceTree = "<group>"; };
+		B8100E212410CA1C005328F0 /* CRUIButtonExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIButtonExt.h; sourceTree = "<group>"; };
+		B8100E222410CA1C005328F0 /* CRHelperLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHelperLib.h; sourceTree = "<group>"; };
+		B8100E232410CA1C005328F0 /* CRUIColorExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIColorExt.h; sourceTree = "<group>"; };
+		B8100E242410CA1C005328F0 /* CRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUtils.h; sourceTree = "<group>"; };
+		B8100E252410CA1C005328F0 /* CRUILabelExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUILabelExt.h; sourceTree = "<group>"; };
+		B8100E262410CA1C005328F0 /* CRUIImageExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIImageExt.m; sourceTree = "<group>"; };
+		B8100E272410CA1C005328F0 /* CRMasonryExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMasonryExt.h; sourceTree = "<group>"; };
+		B8100E282410CA1C005328F0 /* CRUIFontExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIFontExt.h; sourceTree = "<group>"; };
+		B8100E292410CA1C005328F0 /* CRUIAlertControllerExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIAlertControllerExt.h; sourceTree = "<group>"; };
+		B8100E2A2410CA1C005328F0 /* CRUIButtonExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIButtonExt.m; sourceTree = "<group>"; };
+		B8100E2B2410CA1C005328F0 /* CRUIColorExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIColorExt.m; sourceTree = "<group>"; };
+		B8100E2C2410CA1C005328F0 /* CRUIAlertControllerExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIAlertControllerExt.m; sourceTree = "<group>"; };
+		B8100E2D2410CA1C005328F0 /* CRUILabelExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUILabelExt.m; sourceTree = "<group>"; };
+		BE8A8E4641CEF91916191F06 /* Pods-CRHelperLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRHelperLib.debug.xcconfig"; path = "Target Support Files/Pods-CRHelperLib/Pods-CRHelperLib.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8100E112410C9D6005328F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8978BD3CCF454F420916E6 /* libPods-CRHelperLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEB549B694A72EEB9A8DD44C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE8A8E4641CEF91916191F06 /* Pods-CRHelperLib.debug.xcconfig */,
+				4851532BC1F836B2A6F8A830 /* Pods-CRHelperLib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8100E0B2410C9D6005328F0 = {
+			isa = PBXGroup;
+			children = (
+				B8100E162410C9D6005328F0 /* CRHelperLib */,
+				B8100E152410C9D6005328F0 /* Products */,
+				AEB549B694A72EEB9A8DD44C /* Pods */,
+				C7FFEC00A3475406665CF259 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8100E152410C9D6005328F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8100E142410C9D6005328F0 /* libCRHelperLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8100E162410C9D6005328F0 /* CRHelperLib */ = {
+			isa = PBXGroup;
+			children = (
+				B8100E222410CA1C005328F0 /* CRHelperLib.h */,
+				B8100E272410CA1C005328F0 /* CRMasonryExt.h */,
+				B8100E292410CA1C005328F0 /* CRUIAlertControllerExt.h */,
+				B8100E2C2410CA1C005328F0 /* CRUIAlertControllerExt.m */,
+				B8100E212410CA1C005328F0 /* CRUIButtonExt.h */,
+				B8100E2A2410CA1C005328F0 /* CRUIButtonExt.m */,
+				B8100E232410CA1C005328F0 /* CRUIColorExt.h */,
+				B8100E2B2410CA1C005328F0 /* CRUIColorExt.m */,
+				B8100E282410CA1C005328F0 /* CRUIFontExt.h */,
+				B8100E202410CA1C005328F0 /* CRUIImageExt.h */,
+				B8100E262410CA1C005328F0 /* CRUIImageExt.m */,
+				B8100E252410CA1C005328F0 /* CRUILabelExt.h */,
+				B8100E2D2410CA1C005328F0 /* CRUILabelExt.m */,
+				B8100E242410CA1C005328F0 /* CRUtils.h */,
+			);
+			path = CRHelperLib;
+			sourceTree = "<group>";
+		};
+		C7FFEC00A3475406665CF259 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16319B0E1BAF080DDE295082 /* libPods-CRHelperLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8100E132410C9D6005328F0 /* CRHelperLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8100E1D2410C9D6005328F0 /* Build configuration list for PBXNativeTarget "CRHelperLib" */;
+			buildPhases = (
+				9CCDC9F1AADB59780F94A079 /* [CP] Check Pods Manifest.lock */,
+				B8100E102410C9D6005328F0 /* Sources */,
+				B8100E112410C9D6005328F0 /* Frameworks */,
+				B8100E122410C9D6005328F0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRHelperLib;
+			productName = CRHelperLib;
+			productReference = B8100E142410C9D6005328F0 /* libCRHelperLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8100E0C2410C9D6005328F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Crazs;
+				TargetAttributes = {
+					B8100E132410C9D6005328F0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = B8100E0F2410C9D6005328F0 /* Build configuration list for PBXProject "CRHelperLib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8100E0B2410C9D6005328F0;
+			productRefGroup = B8100E152410C9D6005328F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8100E132410C9D6005328F0 /* CRHelperLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CCDC9F1AADB59780F94A079 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CRHelperLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8100E102410C9D6005328F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8100E322410CA1C005328F0 /* CRUILabelExt.m in Sources */,
+				B8100E302410CA1C005328F0 /* CRUIColorExt.m in Sources */,
+				B8100E2F2410CA1C005328F0 /* CRUIButtonExt.m in Sources */,
+				B8100E2E2410CA1C005328F0 /* CRUIImageExt.m in Sources */,
+				B8100E312410CA1C005328F0 /* CRUIAlertControllerExt.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B8100E1B2410C9D6005328F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B8100E1C2410C9D6005328F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8100E1E2410C9D6005328F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE8A8E4641CEF91916191F06 /* Pods-CRHelperLib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8100E1F2410C9D6005328F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4851532BC1F836B2A6F8A830 /* Pods-CRHelperLib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8100E0F2410C9D6005328F0 /* Build configuration list for PBXProject "CRHelperLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8100E1B2410C9D6005328F0 /* Debug */,
+				B8100E1C2410C9D6005328F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8100E1D2410C9D6005328F0 /* Build configuration list for PBXNativeTarget "CRHelperLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8100E1E2410C9D6005328F0 /* Debug */,
+				B8100E1F2410C9D6005328F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8100E0C2410C9D6005328F0 /* Project object */;
+}
