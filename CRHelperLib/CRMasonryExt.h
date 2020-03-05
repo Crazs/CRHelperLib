@@ -17,10 +17,10 @@
 #import <Masonry/Masonry.h>
 
 
-#define MAS_top(_x_)            make.top.mas_equalTo(_x_)
-#define MAS_left(_x_)           make.left.mas_equalTo(_x_)
-#define MAS_bottom(_x_)         make.bottom.mas_equalTo(_x_)
-#define MAS_right(_x_)          make.right.mas_equalTo(_x_)
+#define MAS_top0(_x_)            make.top.mas_equalTo(_x_)
+#define MAS_left0(_x_)           make.left.mas_equalTo(_x_)
+#define MAS_bottom0(_x_)         make.bottom.mas_equalTo(_x_)
+#define MAS_right0(_x_)          make.right.mas_equalTo(_x_)
 
 #define MAS_top(_x_,_y_)            make.top.mas_equalTo(_x_).offset(_y_)
 #define MAS_left(_x_,_y_)           make.left.mas_equalTo(_x_).offset(_y_)
@@ -33,29 +33,29 @@
 #define MAS_centerX(_v_,_x_)        make.centerX.mas_equalTo(_v_).offset(_x_)
 #define MAS_centerY(_v_,_y_)        make.centerY.mas_equalTo(_v_).offset(_y_)
 
+#define MAS_topLeft0(_x_)            make.top.left.mas_equalTo(_x_)
+#define MAS_topRight0(_x_)           make.top.right.mas_equalTo(_x_)
+#define MAS_bottomLef0t(_x_)         make.bottom.left.mas_equalTo(_x_)
+#define MAS_bottomRigh0t(_x_)        make.bottom.right.mas_equalTo(_x_)
+#define MAS_leftRight0(_x_)          make.left.right.mas_equalTo(_x_)
+
 #define MAS_topLeft(_x_,_y_)        make.top.left.mas_equalTo(_x_).offset(_y_)
 #define MAS_topRight(_x_,_y_)       make.top.right.mas_equalTo(_x_).offset(_y_);
 #define MAS_bottomLeft(_x_,_y_)     make.bottom.left.mas_equalTo(_x_).offset(_y_)
 #define MAS_bottomRight(_x_,_y_)    make.bottom.right.mas_equalTo(_x_).offset(_y_)
 #define MAS_leftRight(_x_,_y_)      make.left.right.mas_equalTo(_x_).offset(_y_)
 
-#define MAS_topLeft(_x_)            make.top.left.mas_equalTo(_x_)
-#define MAS_topRight(_x_)           make.top.right.mas_equalTo(_x_)
-#define MAS_bottomLeft(_x_)         make.bottom.left.mas_equalTo(_x_)
-#define MAS_bottomRight(_x_)        make.bottom.right.mas_equalTo(_x_)
-#define MAS_leftRight(_x_)          make.left.right.mas_equalTo(_x_)
-
-#define MAS_topLeftRight(_x_)       make.top.left.right.mas_equalTo(_x_)
-#define MAS_bottomLeftRight(_x_)    make.bottom.left.right.mas_equalTo(_x_)
-#define MAS_leftTopBottom(_x_)      make.left.top.bottom.mas_equalTo(_x_)
-#define MAS_rightTopBottom(_x_)     make.right.top.bottom.mas_equalTo(_x_)
+#define MAS_topLeftRight0(_x_)       make.top.left.right.mas_equalTo(_x_)
+#define MAS_bottomLeftRight0(_x_)    make.bottom.left.right.mas_equalTo(_x_)
+#define MAS_leftTopBottom0(_x_)      make.left.top.bottom.mas_equalTo(_x_)
+#define MAS_rightTopBottom0(_x_)     make.right.top.bottom.mas_equalTo(_x_)
 
 #define MAS_topLeftRight(_x_,_y_)       make.top.left.right.mas_equalTo(_x_).offset(_y_)
 #define MAS_bottomLeftRight(_x_,_y_)    make.bottom.left.right.mas_equalTo(_x_).offset(_y_)
 #define MAS_leftTopBottom(_x_,_y_)      make.left.top.bottom.mas_equalTo(_x_).offset(_y_)
 #define MAS_rightTopBottom(_x_,_y_)     make.right.top.bottom.mas_equalTo(_x_).offset(_y_)
 
-#define MAS_full(_x_)               make.top.left.bottom.right.mas_equalTo(_x_)
+#define MAS_full0(_x_)               make.top.left.bottom.right.mas_equalTo(_x_)
 #define MAS_full(_x_,_y_)           make.top.left.bottom.right.mas_equalTo(_x_).offset(_y_)
 
 #endif /* MasonryExt_h */

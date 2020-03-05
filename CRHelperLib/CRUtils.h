@@ -39,4 +39,7 @@
 //结束编辑
 #define AllEndEditing ([[UIApplication sharedApplication].keyWindow endEditing:YES])
 
+//
+#define cellIdentifier(a)   NSStringFromClass([a class])
+
 #endif /* Utils_h */

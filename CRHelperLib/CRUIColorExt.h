@@ -19,6 +19,8 @@
 #define Color_000       UIColorHex(@"#000000")
 #define Color_FFF       UIColorHex(@"#FFFFFF")
 #define Color_EFEFEF    UIColorHex(@"#EFEFEF")
+#define Color_F4F4F4    UIColorHex(@"#F4F4F4")
+#define Color_DFDFDF    UIColorHex(@"#DFDFDF")
 
 #define Color_Black     [UIColor blackColor]
 #define Color_DarkGray  [UIColor darkGrayColor]
