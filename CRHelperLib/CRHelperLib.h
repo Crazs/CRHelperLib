@@ -17,6 +17,7 @@
 #import "CRUIImageExt.h"
 #import "CRUIAlertControllerExt.h"
 #import "CRUIViewExt.h"
+#import "CRUITextViewExt.h"
 #import "CRUtils.h"
 
 #endif /* CRViewHeader_h */

@@ -16,8 +16,13 @@
 #ifndef ScreenHeight
 #define ScreenHeight   [UIScreen mainScreen].bounds.size.height
 #endif
+///适配
+#define CGFloatAutoFit(a) round(a*(MIN(ScreenWidth, ScreenHeight)/375.))
+#define CGFAF(a) round(a*(MIN(ScreenWidth, ScreenHeight)/320.))
 
-#define StatusBarHeight    [[UIApplication sharedApplication] statusBarFrame].size.height
+
+#define StatusBarHeight     [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kStatusBarHeight    StatusBarHeight
 
 #define iOS_Version     [[UIDevice currentDevice] systemVersion].floatValue
 #define CurVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
@@ -31,15 +36,14 @@
 #define DocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 #define LibraryPath  [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 #define CachesPath   [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
-
-///适配
-#define CGFloatAutoFit(a) round(a*(MIN(kScreenWidth, kScreenHeight)/375.))
-#define CGFAF(a) round(a*(MIN(kScreenWidth, kScreenHeight)/320.))
+#define kDocumentPath   DocumentPath
+#define kLibraryPath    LibraryPath
+#define kCachesPath     CachesPath
 
 //结束编辑
 #define AllEndEditing ([[UIApplication sharedApplication].keyWindow endEditing:YES])
 
-//
+//cell
 #define cellIdentifier(a)   NSStringFromClass([a class])
 
 #endif /* Utils_h */

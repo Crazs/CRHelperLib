@@ -14,6 +14,7 @@
 		B8100E312410CA1C005328F0 /* CRUIAlertControllerExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E2C2410CA1C005328F0 /* CRUIAlertControllerExt.m */; };
 		B8100E322410CA1C005328F0 /* CRUILabelExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E2D2410CA1C005328F0 /* CRUILabelExt.m */; };
 		B82D75772411283A00D8B731 /* CRUIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B82D75762411283A00D8B731 /* CRUIViewExt.m */; };
+		B890C94224121A7F008FC5CF /* CRUITextViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B890C94124121A7F008FC5CF /* CRUITextViewExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +49,8 @@
 		B8100E2D2410CA1C005328F0 /* CRUILabelExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUILabelExt.m; sourceTree = "<group>"; };
 		B82D75752411283A00D8B731 /* CRUIViewExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUIViewExt.h; sourceTree = "<group>"; };
 		B82D75762411283A00D8B731 /* CRUIViewExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUIViewExt.m; sourceTree = "<group>"; };
+		B890C94024121A7F008FC5CF /* CRUITextViewExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUITextViewExt.h; sourceTree = "<group>"; };
+		B890C94124121A7F008FC5CF /* CRUITextViewExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUITextViewExt.m; sourceTree = "<group>"; };
 		BE8A8E4641CEF91916191F06 /* Pods-CRHelperLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRHelperLib.debug.xcconfig"; path = "Target Support Files/Pods-CRHelperLib/Pods-CRHelperLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +112,8 @@
 				B8100E242410CA1C005328F0 /* CRUtils.h */,
 				B82D75752411283A00D8B731 /* CRUIViewExt.h */,
 				B82D75762411283A00D8B731 /* CRUIViewExt.m */,
+				B890C94024121A7F008FC5CF /* CRUITextViewExt.h */,
+				B890C94124121A7F008FC5CF /* CRUITextViewExt.m */,
 			);
 			path = CRHelperLib;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			files = (
 				B8100E322410CA1C005328F0 /* CRUILabelExt.m in Sources */,
 				B8100E302410CA1C005328F0 /* CRUIColorExt.m in Sources */,
+				B890C94224121A7F008FC5CF /* CRUITextViewExt.m in Sources */,
 				B8100E2F2410CA1C005328F0 /* CRUIButtonExt.m in Sources */,
 				B82D75772411283A00D8B731 /* CRUIViewExt.m in Sources */,
 				B8100E2E2410CA1C005328F0 /* CRUIImageExt.m in Sources */,

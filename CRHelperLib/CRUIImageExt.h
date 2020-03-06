@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define UIImage_name(_a_)   [UIImage imageNamed:_a_]
 #define UIImage_name_Render(_a_,_r_)    [[UIImage imageNamed:_a_] imageWithRenderingMode:_r_]
-#define UIImage_name_Original(_a_)      UIImage_name_render(_a_,UIImageRenderingModeAlwaysOriginal)
+#define UIImage_name_Original(_a_)      UIImage_name_Render(_a_,UIImageRenderingModeAlwaysOriginal)
 #define UIImage_name_Template(_a_)      UIImage_name_render(_a_,UIImageRenderingModeAlwaysTemplate)
 
 
