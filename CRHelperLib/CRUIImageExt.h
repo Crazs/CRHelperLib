@@ -17,16 +17,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 typedef NS_ENUM(NSInteger, GradientType) {
-    GradientFromTopToBottom = 1,            
-    GradientFromLeftToRight,
-    GradientFromLeftTopToRightBottom,
-    GradientFromLeftBottomToRightTop
+    GradientFromTopToBottom = 1,            //⬇️
+    GradientFromLeftToRight,                //➡️
+    GradientFromLeftTopToRightBottom,       //↘️
+    GradientFromLeftBottomToRightTop        //↗️
 };
 
 @interface UIImage(CRExt)
 
+/**
+获取单色图片
+ */
 + (UIImage *)imageWithColor:(UIColor *)color;
-
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
+/**
+ 获取视频封面
+ */
++ (UIImage *)screenShotImageFromVideoFileRUL:(NSURL *)fileURL;
+/**
+ 裁剪图片
+ */
 - (UIImage*)scaleToSize:(CGSize)size;
 /**
  *  根据给定的颜色，生成渐变色的图片

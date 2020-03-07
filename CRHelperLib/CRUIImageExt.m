@@ -7,12 +7,16 @@
 //
 
 #import "CRUIImageExt.h"
+#import <AVKit/AVKit.h>
 
 @implementation UIImage(CRExt)
 
-+ (UIImage *)imageWithColor:(UIColor *)color
-{
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
++ (UIImage *)imageWithColor:(UIColor *)color{
+    return [self imageWithColor:color size:CGSizeMake(1, 1)];
+}
+
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size{
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
@@ -21,8 +25,26 @@
     
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
+
     return image;
+}
+
+
++ (UIImage *)screenShotImageFromVideoFileRUL:(NSURL *)fileURL{
+
+    UIImage *shotImage;
+    //视频路径URL
+    AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:fileURL options:nil];
+    AVAssetImageGenerator *gen = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+    gen.appliesPreferredTrackTransform = YES;
+    CMTime time = CMTimeMakeWithSeconds(0.0, 600);
+    NSError *error = nil;
+    CMTime actualTime;
+    CGImageRef image = [gen copyCGImageAtTime:time actualTime:&actualTime error:&error];
+    shotImage = [[UIImage alloc] initWithCGImage:image];
+    CGImageRelease(image);
+    
+    return shotImage;
 }
 
 - (UIImage *)scaleToSize:(CGSize)size
