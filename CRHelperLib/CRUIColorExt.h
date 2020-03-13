@@ -39,6 +39,8 @@
 #define Color_Clear     [UIColor clearColor]
 
 
+#define Color_Random    [UIColor randomColor]
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (CRExt)
@@ -49,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIColor*)colorWithHexString:(NSString*)colorString;
 + (UIColor*)colorWithHexString:(NSString*)colorString alpha:(CGFloat)alpha;
-
++ (UIColor*)randomColor;
 
 @end
 

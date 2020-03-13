@@ -12,11 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIAlertController(CRExt)
 
+//不带cancel
 + (instancetype)alertControllerWithMessage:(NSString *)message;
 
 + (instancetype)alertControllerWithTitle:(NSString * _Nullable )title
                                  message:(NSString *)message;
 
+//带cancel
 + (instancetype)alertControllerWithMessage:(NSString *)message
                                    confirm:(void (^ __nullable)(UIAlertAction *action))handler;
 
