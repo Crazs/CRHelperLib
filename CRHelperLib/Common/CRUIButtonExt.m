@@ -207,15 +207,4 @@
 }
 
 
-
-/**
-
-- (void)setBackColor:(UIColor *)color
-            forState:(UIControlState)state{
-    
-    
-    
-}
- */
-
 @end
