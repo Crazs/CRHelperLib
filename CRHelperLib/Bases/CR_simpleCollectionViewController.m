@@ -8,8 +8,6 @@
 
 #import "CR_simpleCollectionViewController.h"
 #import "CR_simpleEmptyView.h"
-#import "CR_simpleCollectionViewCell.h"
-#import <CRHelperLib/CRHelperLib.h>
 #import <MJRefresh/MJRefresh.h>
 
 #define D_lineNum   4
@@ -85,8 +83,7 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    CR_simpleCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier(SimpleCollectionViewCell) forIndexPath:indexPath];
-    return cell;
+    return nil;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -112,7 +109,6 @@
     self.collectionView.dataSource = self;
     self.collectionView.showsVerticalScrollIndicator = NO;
     self.collectionView.showsHorizontalScrollIndicator = NO;
-    [self.collectionView registerClass:[SimpleCollectionViewCell class] forCellWithReuseIdentifier:cellIdentifier(SimpleCollectionViewCell)];
 }
 
 #pragma mark - Setter
@@ -135,7 +131,7 @@
     layout.minimumLineSpacing = self.itemOffset;
     layout.minimumInteritemSpacing = self.itemOffset;
     layout.sectionInset = UIEdgeInsetsMake(self.itemOffset, self.itemOffset, self.itemOffset, self.itemOffset);
-    CGFloat f =  [self sizeForCRMediaContainItem:self.view.width];
+    CGFloat f =  [self sizeForCRMediaContainItem:CGRectGetWidth(self.view.bounds)];
     layout.itemSize = CGSizeMake(f, f);
     _collectionViewLayout = layout;
     

@@ -23,6 +23,7 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'Bases' do |ss|
+      ss.dependency "MJRefresh"
       ss.source_files  = "CRHelperLib/Bases/*.{h,m}"
       ss.public_header_files = "CRHelperLib/Bases/CRBases.h","CRHelperLib/Bases/*.h"
   end

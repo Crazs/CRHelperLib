@@ -30,7 +30,7 @@ static NSString *_cancelText    = @"取消";
 
 #pragma mark - Function
 + (instancetype)CR_alertControllerWithMessage:(NSString *)message{
-    return [self alertControllerWithTitle:nil message:message];
+    return [self CR_alertControllerWithTitle:nil message:message];
 }
 + (instancetype)CR_alertControllerWithTitle:(NSString *)title message:(NSString *)message{
     UIAlertController * alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
@@ -40,7 +40,7 @@ static NSString *_cancelText    = @"取消";
 }
 
 + (instancetype)CR_alertControllerWithMessage:(NSString *)message confirm:(void (^)(UIAlertAction * _Nonnull))handler{
-    return [self alertControllerWithTitle:nil Message:message confirm:handler];
+    return [self CR_alertControllerWithTitle:nil Message:message confirm:handler];
 }
 
 + (instancetype)CR_alertControllerWithTitle:(NSString *)title Message:(NSString *)message confirm:(void (^)(UIAlertAction * _Nonnull))handler{
