@@ -103,9 +103,6 @@
     CGColorSpaceRelease(colorSpace);
     UIGraphicsEndImageContext();
     return image;
-    
-    
-    [[UIImage imageNamed:@""] imageWithRenderingMode:@""];
 }
 
 @end

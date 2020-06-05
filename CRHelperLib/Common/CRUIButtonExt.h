@@ -98,12 +98,6 @@ typedef NS_ENUM(NSInteger, CRButtonImageTextAlign) {
 
 - (void)setImageTextAlign:(CRButtonImageTextAlign)imageTextAlign;
 
-/**
-- (void)setBackColor:(UIColor *)color
-            forState:(UIControlState)state;
-
-*/
-
 
 @end
 

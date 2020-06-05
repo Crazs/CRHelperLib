@@ -40,9 +40,9 @@
 }
 
 + (UIColor*)randomColor{
-    return [UIColor colorWithRed:arc4random()%255/225.0
-                           green:arc4random()%255/225.0
-                            blue:arc4random()%255/225.0
+    return [UIColor colorWithRed:arc4random()%255/255.0
+                           green:arc4random()%255/255.0
+                            blue:arc4random()%255/255.0
                            alpha:1];
 }
 

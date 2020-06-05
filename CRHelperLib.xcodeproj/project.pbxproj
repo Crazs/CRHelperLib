@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6B8978BD3CCF454F420916E6 /* libPods-CRHelperLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16319B0E1BAF080DDE295082 /* libPods-CRHelperLib.a */; };
+		8D39EBA3248ABAB500EF90F0 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D39EB93248ABAB500EF90F0 /* BaseViewController.m */; };
+		8D39EBA4248ABAB500EF90F0 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D39EB95248ABAB500EF90F0 /* BaseNavigationController.m */; };
+		8D39EBA5248ABAB500EF90F0 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D39EB96248ABAB500EF90F0 /* BaseModel.m */; };
+		8D39EBA7248ABAB500EF90F0 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D39EB9D248ABAB500EF90F0 /* BaseTabBarController.m */; };
+		8D39EBA8248ABAB500EF90F0 /* CR_simpleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D39EB9E248ABAB500EF90F0 /* CR_simpleCollectionViewController.m */; };
+		8D39EBA9248ABAB500EF90F0 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D39EBA0248ABAB500EF90F0 /* NetworkManager.m */; };
+		8D39EBAA248ABAB500EF90F0 /* CR_simpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D39EBA1248ABAB500EF90F0 /* CR_simpleTableViewController.m */; };
+		8D39EBAB248ABAB500EF90F0 /* CR_simpleEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D39EBA2248ABAB500EF90F0 /* CR_simpleEmptyView.m */; };
 		B8100E2E2410CA1C005328F0 /* CRUIImageExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E262410CA1C005328F0 /* CRUIImageExt.m */; };
 		B8100E2F2410CA1C005328F0 /* CRUIButtonExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E2A2410CA1C005328F0 /* CRUIButtonExt.m */; };
 		B8100E302410CA1C005328F0 /* CRUIColorExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E2B2410CA1C005328F0 /* CRUIColorExt.m */; };
@@ -32,10 +40,28 @@
 /* Begin PBXFileReference section */
 		16319B0E1BAF080DDE295082 /* libPods-CRHelperLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRHelperLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4851532BC1F836B2A6F8A830 /* Pods-CRHelperLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRHelperLib.release.xcconfig"; path = "Target Support Files/Pods-CRHelperLib/Pods-CRHelperLib.release.xcconfig"; sourceTree = "<group>"; };
+		8D39EB8C248AAF5400EF90F0 /* CRHelperLib.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CRHelperLib.podspec; sourceTree = "<group>"; };
+		8D39EB90248ABAB500EF90F0 /* CRBases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBases.h; sourceTree = "<group>"; };
+		8D39EB91248ABAB500EF90F0 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		8D39EB92248ABAB500EF90F0 /* CR_simpleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CR_simpleCollectionViewController.h; sourceTree = "<group>"; };
+		8D39EB93248ABAB500EF90F0 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8D39EB94248ABAB500EF90F0 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		8D39EB95248ABAB500EF90F0 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		8D39EB96248ABAB500EF90F0 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		8D39EB98248ABAB500EF90F0 /* CR_simpleEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CR_simpleEmptyView.h; sourceTree = "<group>"; };
+		8D39EB99248ABAB500EF90F0 /* CR_simpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CR_simpleTableViewController.h; sourceTree = "<group>"; };
+		8D39EB9B248ABAB500EF90F0 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		8D39EB9C248ABAB500EF90F0 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		8D39EB9D248ABAB500EF90F0 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		8D39EB9E248ABAB500EF90F0 /* CR_simpleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CR_simpleCollectionViewController.m; sourceTree = "<group>"; };
+		8D39EB9F248ABAB500EF90F0 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8D39EBA0248ABAB500EF90F0 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		8D39EBA1248ABAB500EF90F0 /* CR_simpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CR_simpleTableViewController.m; sourceTree = "<group>"; };
+		8D39EBA2248ABAB500EF90F0 /* CR_simpleEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CR_simpleEmptyView.m; sourceTree = "<group>"; };
 		B8100E142410C9D6005328F0 /* libCRHelperLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCRHelperLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8100E202410CA1C005328F0 /* CRUIImageExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIImageExt.h; sourceTree = "<group>"; };
 		B8100E212410CA1C005328F0 /* CRUIButtonExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIButtonExt.h; sourceTree = "<group>"; };
-		B8100E222410CA1C005328F0 /* CRHelperLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHelperLib.h; sourceTree = "<group>"; };
+		B8100E222410CA1C005328F0 /* CRHelperLibExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHelperLibExt.h; sourceTree = "<group>"; };
 		B8100E232410CA1C005328F0 /* CRUIColorExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIColorExt.h; sourceTree = "<group>"; };
 		B8100E242410CA1C005328F0 /* CRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUtils.h; sourceTree = "<group>"; };
 		B8100E252410CA1C005328F0 /* CRUILabelExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUILabelExt.h; sourceTree = "<group>"; };
@@ -66,6 +92,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D39EB8D248AB02300EF90F0 /* MasonryExt */ = {
+			isa = PBXGroup;
+			children = (
+				B8100E272410CA1C005328F0 /* CRMasonryExt.h */,
+			);
+			path = MasonryExt;
+			sourceTree = "<group>";
+		};
+		8D39EB8E248AB94F00EF90F0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B8100E222410CA1C005328F0 /* CRHelperLibExt.h */,
+				B8100E292410CA1C005328F0 /* CRUIAlertControllerExt.h */,
+				B8100E2C2410CA1C005328F0 /* CRUIAlertControllerExt.m */,
+				B8100E212410CA1C005328F0 /* CRUIButtonExt.h */,
+				B8100E2A2410CA1C005328F0 /* CRUIButtonExt.m */,
+				B8100E232410CA1C005328F0 /* CRUIColorExt.h */,
+				B8100E2B2410CA1C005328F0 /* CRUIColorExt.m */,
+				B8100E282410CA1C005328F0 /* CRUIFontExt.h */,
+				B8100E202410CA1C005328F0 /* CRUIImageExt.h */,
+				B8100E262410CA1C005328F0 /* CRUIImageExt.m */,
+				B8100E252410CA1C005328F0 /* CRUILabelExt.h */,
+				B8100E2D2410CA1C005328F0 /* CRUILabelExt.m */,
+				B890C94024121A7F008FC5CF /* CRUITextViewExt.h */,
+				B890C94124121A7F008FC5CF /* CRUITextViewExt.m */,
+				B82D75752411283A00D8B731 /* CRUIViewExt.h */,
+				B82D75762411283A00D8B731 /* CRUIViewExt.m */,
+				B8100E242410CA1C005328F0 /* CRUtils.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8D39EB8F248ABAB500EF90F0 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				8D39EB9B248ABAB500EF90F0 /* BaseModel.h */,
+				8D39EB96248ABAB500EF90F0 /* BaseModel.m */,
+				8D39EB90248ABAB500EF90F0 /* CRBases.h */,
+				8D39EBAC248ABC4D00EF90F0 /* ViewController */,
+				8D6F4C84248ABE740036687B /* ListController */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		8D39EBAC248ABC4D00EF90F0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8D39EB9C248ABAB500EF90F0 /* BaseNavigationController.h */,
+				8D39EB95248ABAB500EF90F0 /* BaseNavigationController.m */,
+				8D39EB94248ABAB500EF90F0 /* BaseTabBarController.h */,
+				8D39EB9D248ABAB500EF90F0 /* BaseTabBarController.m */,
+				8D39EB9F248ABAB500EF90F0 /* BaseViewController.h */,
+				8D39EB93248ABAB500EF90F0 /* BaseViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8D39EBAD248ABCA900EF90F0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8D39EB91248ABAB500EF90F0 /* NetworkManager.h */,
+				8D39EBA0248ABAB500EF90F0 /* NetworkManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8D6F4C84248ABE740036687B /* ListController */ = {
+			isa = PBXGroup;
+			children = (
+				8D39EB98248ABAB500EF90F0 /* CR_simpleEmptyView.h */,
+				8D39EBA2248ABAB500EF90F0 /* CR_simpleEmptyView.m */,
+				8D39EB92248ABAB500EF90F0 /* CR_simpleCollectionViewController.h */,
+				8D39EB9E248ABAB500EF90F0 /* CR_simpleCollectionViewController.m */,
+				8D39EB99248ABAB500EF90F0 /* CR_simpleTableViewController.h */,
+				8D39EBA1248ABAB500EF90F0 /* CR_simpleTableViewController.m */,
+			);
+			name = ListController;
+			sourceTree = "<group>";
+		};
 		AEB549B694A72EEB9A8DD44C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +183,7 @@
 		B8100E0B2410C9D6005328F0 = {
 			isa = PBXGroup;
 			children = (
+				8D39EB8C248AAF5400EF90F0 /* CRHelperLib.podspec */,
 				B8100E162410C9D6005328F0 /* CRHelperLib */,
 				B8100E152410C9D6005328F0 /* Products */,
 				AEB549B694A72EEB9A8DD44C /* Pods */,
@@ -96,24 +202,10 @@
 		B8100E162410C9D6005328F0 /* CRHelperLib */ = {
 			isa = PBXGroup;
 			children = (
-				B8100E222410CA1C005328F0 /* CRHelperLib.h */,
-				B8100E272410CA1C005328F0 /* CRMasonryExt.h */,
-				B8100E292410CA1C005328F0 /* CRUIAlertControllerExt.h */,
-				B8100E2C2410CA1C005328F0 /* CRUIAlertControllerExt.m */,
-				B8100E212410CA1C005328F0 /* CRUIButtonExt.h */,
-				B8100E2A2410CA1C005328F0 /* CRUIButtonExt.m */,
-				B8100E232410CA1C005328F0 /* CRUIColorExt.h */,
-				B8100E2B2410CA1C005328F0 /* CRUIColorExt.m */,
-				B8100E282410CA1C005328F0 /* CRUIFontExt.h */,
-				B8100E202410CA1C005328F0 /* CRUIImageExt.h */,
-				B8100E262410CA1C005328F0 /* CRUIImageExt.m */,
-				B8100E252410CA1C005328F0 /* CRUILabelExt.h */,
-				B8100E2D2410CA1C005328F0 /* CRUILabelExt.m */,
-				B8100E242410CA1C005328F0 /* CRUtils.h */,
-				B82D75752411283A00D8B731 /* CRUIViewExt.h */,
-				B82D75762411283A00D8B731 /* CRUIViewExt.m */,
-				B890C94024121A7F008FC5CF /* CRUITextViewExt.h */,
-				B890C94124121A7F008FC5CF /* CRUITextViewExt.m */,
+				8D39EBAD248ABCA900EF90F0 /* Network */,
+				8D39EB8F248ABAB500EF90F0 /* Bases */,
+				8D39EB8E248AB94F00EF90F0 /* Common */,
+				8D39EB8D248AB02300EF90F0 /* MasonryExt */,
 			);
 			path = CRHelperLib;
 			sourceTree = "<group>";
@@ -209,12 +301,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D39EBAB248ABAB500EF90F0 /* CR_simpleEmptyView.m in Sources */,
 				B8100E322410CA1C005328F0 /* CRUILabelExt.m in Sources */,
+				8D39EBA8248ABAB500EF90F0 /* CR_simpleCollectionViewController.m in Sources */,
+				8D39EBAA248ABAB500EF90F0 /* CR_simpleTableViewController.m in Sources */,
+				8D39EBA3248ABAB500EF90F0 /* BaseViewController.m in Sources */,
 				B8100E302410CA1C005328F0 /* CRUIColorExt.m in Sources */,
 				B890C94224121A7F008FC5CF /* CRUITextViewExt.m in Sources */,
+				8D39EBA7248ABAB500EF90F0 /* BaseTabBarController.m in Sources */,
 				B8100E2F2410CA1C005328F0 /* CRUIButtonExt.m in Sources */,
+				8D39EBA4248ABAB500EF90F0 /* BaseNavigationController.m in Sources */,
+				8D39EBA9248ABAB500EF90F0 /* NetworkManager.m in Sources */,
 				B82D75772411283A00D8B731 /* CRUIViewExt.m in Sources */,
 				B8100E2E2410CA1C005328F0 /* CRUIImageExt.m in Sources */,
+				8D39EBA5248ABAB500EF90F0 /* BaseModel.m in Sources */,
 				B8100E312410CA1C005328F0 /* CRUIAlertControllerExt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
