@@ -1,13 +1,13 @@
 //
-//  CRBaseLib.h
-//  CRBaseLib
+//  CRBases.h
+//  CRBases
 //
 //  Created by 周文涛 on 2020/3/13.
 //  Copyright © 2020 Crazs. All rights reserved.
 //
 
-#ifndef CRBaseLib_h
-#define CRBaseLib_h
+#ifndef CRBases_h
+#define CRBases_h
 
 #import "BaseModel.h"
 
